@@ -1,0 +1,25 @@
+function palindrome(str) {
+  // Good luck!
+   
+  var expression = /[abcdefghijklmnopqrstuvwxyz01234556789]/g;
+  
+  var string = str.toLowerCase().match(expression);
+  window.alert(string);
+  window.alert(string.length);
+  var len = string.length;
+  window.alert(len);
+  for (i = 0; i < string.length;) {
+        
+        if (string[i] == string[len-i-1]){
+        window.alert(string[i] + string[len-i-1]); 
+        i++;   
+        } else {
+        window.alert(string[i] + string[len-i-1])
+        return false;
+        }   
+     
+  }
+return true;
+}
+
+window.alert(palindrome("0_0 (: /-\ :) 0-0"));
